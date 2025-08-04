@@ -1,0 +1,170 @@
+/* Basic Reset and Layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Make body a flex container, vertical direction */
+body {
+  flex: 1;
+}
+.about-image-container {
+  text-align: center; /* center container contents */
+  margin: 30px 0;
+}
+
+.about-image {
+  width: 200px;      /* size the image */
+  height: auto;      /* keep aspect ratio */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* subtle shadow */
+  object-fit: cover;
+}
+
+
+/* Header styling */
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 10px;
+  background: rgb(121, 195, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.Logo {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.Logo img {
+  margin-right: 10px;
+}
+
+.Navbar {
+  display: flex;
+  padding-right: 40px;
+}
+
+.Navbar a {
+  position: relative;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.Navbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+
+.Navbar a:hover::before {
+  width: 100%;
+}
+
+/* Main content grows to fill available space */
+main {
+  flex: 1;
+  max-width: 800px;
+  margin: 60px auto 40px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Footer styling */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 4px solid #333;
+  margin-top: auto; /* Push footer to bottom */
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+}
+
+.footer-logo h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+.footer-content p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.footer-links {
+  margin: 20px 0;
+}
+
+.footer-links a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: rgb(121, 195, 255);
+}
+
+.footer-copy {
+  font-size: 14px;
+  color: #777;
+  margin-top: 20px;
+}

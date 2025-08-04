@@ -1,0 +1,30 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+venv/
+env/
+*.egg-info/
+
+# Environment config
+.env
+
+# Jupyter/Colab
+.ipynb_checkpoints/
+
+# PyTorch model files
+*.pth
+*.pt
+
+# Logs and outputs
+*.log
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+

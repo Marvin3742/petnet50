@@ -1,0 +1,200 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0rem;
+    background: #ffffff;
+}
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10px;
+    background: rgb(121, 195, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+  
+.Logo{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+}
+.Navbar {
+    display: flex;
+    padding-right: 40px;
+}
+.Navbar a{
+    position: relative;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.Navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    transition: .3s;
+}
+
+.Navbar a:hover::before {
+    width: 100%;
+}
+.Container {
+    display: inline;
+}
+/* Headings and Paragraphs */
+h1 {
+    text-align: center;
+    color: #222;
+    margin-top: 40px;
+    font-size: 36px;
+  }
+  
+h2 {
+    text-align: center;
+    color: #444;
+    margin-top: 40px;
+    font-size: 28px;
+  }
+  
+main p {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  
+/* Images */
+.cnn_img,
+.resnet50_img {
+  display: block;
+  width: 500px;
+  border: 1px solid #ccc;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+/* Test Button */
+.test_btn {
+  display: block;
+  width: max-content;
+  margin: 30px auto;
+  padding: 12px 25px;
+  background-color: rgb(121, 195, 255);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.test_btn:hover {
+  background-color: rgb(96, 165, 228);
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 60px;
+  border-top: 4px solid #333;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;  /* center image + text vertically */
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+}
+
+.footer-logo h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+
+.footer-content p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.footer-links {
+  margin: 20px 0;
+}
+
+.footer-links a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: rgb(121, 195, 255);
+}
+
+.footer-copy {
+  font-size: 14px;
+  color: #777;
+  margin-top: 20px;
+}
+
+
+
+.introduction {
+    min-height: calc(100vh - 80px); /* full viewport height minus header height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+    box-sizing: border-box;
+    background-image: url("images/hero.jpg"); /* adjust path */
+    background-size: cover;           /* scale image to cover entire section */
+    background-position: center;      /* center image */
+    background-repeat: no-repeat;     /* don’t tile it */
+    color: white;      
+  }
+  
+.introduction p {
+    color: white;
+    font-size: 24px;
+}
+
+.introduction h1 {
+    color: white;
+    font-size: 100px;
+    margin-bottom: 10px;
+}
