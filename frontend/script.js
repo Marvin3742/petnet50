@@ -16,7 +16,7 @@ classifyButton.addEventListener("click", async () => {
   output.innerText = "Predicting...";
 
   try {
-    const res = await fetch("http://127.0.0.1:8000/predict", {
+    const res = await fetch("https://petnet-backend-teyy.onrender.com/predict", {
       method: "POST",
       body: formData,
     });
