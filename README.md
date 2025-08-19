@@ -6,7 +6,7 @@ Built by Marvin Guerrero-Rangel.
 
 ## 🎯 Purpose
 
-This project was created to showcase my interest in **Artificial Intelligence** and **Machine Learning**, and to make my models accessible through a simple and interactive UI.
+This project was created to learn web dev. This is my first ever full stack app. 
 
 ## 📸 Features
 
